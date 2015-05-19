@@ -53,7 +53,7 @@ public class SimpleArrayMatrix implements Matrix {
         for (int i = 0; i < this.getRows(); i++ ) {
             out += "\n";
             for (int j = 0; j < this.getColumns(); j++ ) {
-                out += "   " + data[i][j].toString();
+                out += "|\t" + data[i][j].toString();
             }
         }
         return out;

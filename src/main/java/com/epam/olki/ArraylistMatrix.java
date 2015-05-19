@@ -82,7 +82,7 @@ public class ArraylistMatrix  implements Matrix, Iterable<Entity>  {
 
     public Entity getEntity(int i, int j) {
         // need to add exceptions
-        return data.get((i * rows) + j);
+        return data.get((i * (columns)) + j);
     }
 
     public String toString() {
@@ -98,7 +98,7 @@ public class ArraylistMatrix  implements Matrix, Iterable<Entity>  {
             if (count++ % this.getColumns() == 0) {
                 out += "\n";
             }
-            out += "   " + data.toString();
+            out += "|\t" + data.toString();
         }
         return out;
     }
